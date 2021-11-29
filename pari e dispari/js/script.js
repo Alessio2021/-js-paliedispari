@@ -18,9 +18,9 @@ const sum = number + randomPc;
 
 // Stabiliamo se la somma dei due numeri è pari o dispari
 
-function evenOrOdd(sum) {
+function evenOrOdd(somma) {
     let find = false;
-    if (sum % 2 == 0) {
+    if (somma % 2 == 0) {
         find = true
     } 
     console.log(find);
@@ -40,7 +40,7 @@ function evenOrOdd(sum) {
 
 // Dichiariamo chi ha vinto
 
-if (evenOrOdd(find == true) && evenOdd == 'pari' || evenOrOdd(find == false) && evenOdd == 'dispari') {
+if (evenOrOdd(sum) == true && evenOdd == 'pari' || evenOrOdd(sum) == false && evenOdd == 'dispari') {
     console.log('vincitore e l utente');
 } else {
     console.log('il vincitore e il pc');
