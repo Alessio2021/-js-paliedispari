@@ -2,7 +2,7 @@
 
 const evenOdd = prompt('scegli tra pari o dispari');
 const number = parseInt(prompt('scegli un numero'));
-
+console.log(number);
 // Generiamo un numero random(sempre da 1 a 5) per il computer
 
 function getRndInteger(min, max) {
@@ -17,21 +17,30 @@ console.log(randomPc);
 const sum = number + randomPc;
 
 // Stabiliamo se la somma dei due numeri è pari o dispari
-let find = false;
 
-if (sum % 2 == 0) {
-    find = true
-} 
-
-if (find == true) {
-    console.log('pari');
-} else {
-    console.log('dispari');
+function evenOrOdd(sum) {
+    let find = false;
+    if (sum % 2 == 0) {
+        find = true
+    } 
+    console.log(find);
+    return find;
 }
+
+// let find = false;
+// if (sum % 2 == 0) {
+//     find = true
+// } 
+
+// if (find == true) {
+//     console.log('pari');
+// } else {
+//     console.log('dispari');
+// }
 
 // Dichiariamo chi ha vinto
 
-if (find == true && evenOdd == 'pari' || find == false && evenOdd == 'dispari') {
+if (evenOrOdd(find == true) && evenOdd == 'pari' || evenOrOdd(find == false) && evenOdd == 'dispari') {
     console.log('vincitore e l utente');
 } else {
     console.log('il vincitore e il pc');
