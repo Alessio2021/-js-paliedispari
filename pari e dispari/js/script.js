@@ -15,6 +15,10 @@ const sum = number + numbComputer;
 let find = false;
 
 if (sum % 2 == 0) {
+    find = true
+} 
+
+if (find == true) {
     console.log('pari');
 } else {
     console.log('dispari');
@@ -22,6 +26,8 @@ if (sum % 2 == 0) {
 
 // Dichiariamo chi ha vinto
 
-if (  evenOdd ) {
-    
+if (find == true && evenOdd == 'pari' || find == false && evenOdd == 'dispari') {
+    console.log('vincitore e l utente');
+} else {
+    console.log('il vincitore e il pc');
 }
