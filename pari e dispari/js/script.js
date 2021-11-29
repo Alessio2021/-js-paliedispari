@@ -5,11 +5,16 @@ const number = parseInt(prompt('scegli un numero'));
 
 // Generiamo un numero random(sempre da 1 a 5) per il computer
 
-const numbComputer = Math.round(Math.random() * 5);
-console.log(numbComputer);
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+const randomPc = getRndInteger(1, 5);
+console.log(randomPc);
+
 // Sommiamo i due numeri
 
-const sum = number + numbComputer;
+const sum = number + randomPc;
 
 // Stabiliamo se la somma dei due numeri è pari o dispari
 let find = false;
